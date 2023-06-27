@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/dist/output.css" rel="stylesheet" />
-    <link href="path/to/flowbite.min.css" rel="stylesheet" />
-    <script src="path/to/flowbite.min.js"></script>
     <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=IBM+Plex+Sans:wght@400;500&family=Schibsted+Grotesk&display=swap"
       rel="stylesheet"
     />
 
     <!--NavBar-->
-    <nav
-      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-white"
-    >
+    <nav class="bg-transparent w-full z-20 top-0 left-0 border-b border-white">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -25,7 +25,7 @@
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -50,7 +50,7 @@
           id="navbar-sticky"
         >
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
           >
             <li>
               <a
@@ -76,21 +76,13 @@
                 >Sobre mi</a
               >
             </li>
-            <li>
-              <a
-                href="#"
-                class="block pl-3 pr-4 font-fontIBM text-labelColor hover:text-labelColorHover px-3 py-2 rounded-md text-xl font-medium"
-                aria-current="page"
-                >Proyectos</a
-              >
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   </head>
   <body class="bg-bgColor">
-    <section class="">
+    <section class="mt-2">
       <div class="grid grid-rows-1 place-items-center grid-flow-row gap-2">
         <label class="text-labelColor font-medium text-fontHeebo text-2xl">
           ¡Hola! me llamo:
@@ -122,14 +114,18 @@
           <img src="src/img/linkedin.png" class="" />
           <p class="text-labelColor text-lg text-fontHeebo">Linkedin</p></a
         >
-        <a href="https://github.com/Markinsky " target="_blank"
+        <a href="https://github.com/Markinsky" target="_blank"
           ><img src="src/img/github.png" class="" />
           <p class="text-labelColor text-lg text-fontHeebo">Github</p>
         </a>
       </div>
     </section>
     <section id="skills" class="bg-bgColorB mt-4 mb-4">
-      <h2 class="text-labelColor text-2xl text-center mx-auto">Skills</h2>
+      <h2
+        class="text-labelColor text-fontIBM font-medium text-2xl text-center mx-auto"
+      >
+        Skills
+      </h2>
       <div
         class="flex flex-col gap-7 items-center justify-center pt-4 pb-4 sm:flex-row"
       >
@@ -141,7 +137,7 @@
         <img src="src/img/js.png" />
       </div>
     </section>
-    <section class="pt-4 pb-4">
+    <section class="pt-3 pb-6">
       <h1
         class="text-labelColor text-center mx-auto text-2xl text-fontIBM font-medium"
       >
@@ -150,9 +146,11 @@
       <div
         class="flex flex-col gap-6 items-center mt-4 justify-center lg:flex-row"
       >
-        <div class="max-w-md rounded overflow-hidden shadow-lg">
+        <div
+          class="max-w-md rounded overflow-hidden shadow-lg border-r border-b border-l border-gray-400"
+        >
           <img class="w-full" src="/src/img/tec.jpg" />
-          <div class="px-6 py-4 bg-cardsColor">
+          <div class="px-6 py-4 bg-transparent">
             <div class="text-cardsLabel font-bold text-xl mb-2 text-fontIBM">
               Tecnologico Mario Molina
             </div>
@@ -173,9 +171,11 @@
             </div>
           </div>
         </div>
-        <div class="max-w-md rounded overflow-hidden shadow-lg">
+        <div
+          class="max-w-md rounded overflow-hidden shadow-lg border-r border-b border-l border-gray-400"
+        >
           <img class="w-full" src="/src/img/generation.jpg" />
-          <div class="px-6 py-4 bg-cardsColor">
+          <div class="px-6 py-4 bg-transparent">
             <div class="text-cardsLabel font-bold text-xl mb-2 text-fontIBM">
               Generation México
             </div>
@@ -201,71 +201,101 @@
       </div>
     </section>
     <section class="bg-bgColorB pt-4 pb-4">
-      <div class="flex items-center justify-center">
-        <form action="post" class="px-8 text-center p-3">
-          <h2 class="text-labelColor text-2xl text-fontHeebo font-medium">
+      <div
+        class="flex flex-col gap-6 items-center justify-center pt-4 sm:flex-row"
+      >
+        <div class="w-96">
+          <h1 class="text-labelColor font-medium text-fontHeebo text-lg">
             Contactame
-          </h2>
-          <div class="mb-4">
-            <label
-              class="text-labelColor font-medium text-fontHeebo text-lg"
-              for="name"
+          </h1>
+          <p class="text-labelColor font-medium text-fontHeebo text-lg">
+            ¡Gracias por tu interés en contactarme! Por favor, déjame tus
+            detalles y te responderé lo antes posible.
+          </p>
+          <p class="text-labelColor font-medium text-fontHeebo text-lg">
+            También puedes mandarme mensaje por medio de LinkedIn.
+          </p>
+          <p class="text-labelColor font-medium text-fontHeebo text-lg">
+            Espero tener noticias tuyas pronto. ¡Gracias!
+          </p>
+        </div>
+        <div class="w-auto">
+          <form action="post" class="px-8 p-3 border-2 border-gray-400">
+            <h2
+              class="text-labelColor text-2xl text-center text-fontHeebo font-medium"
             >
-              Nombre:
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Nombre"
-              required
-            />
-          </div>
-          <div class="mb-4">
-            <label
-              class="text-labelColor font-medium text-fontHeebo text-lg"
-              for="email"
+              Contactame
+            </h2>
+            <div class="mb-4">
+              <label
+                class="text-labelColor font-medium text-fontHeebo text-lg"
+                for="name"
+              >
+                Nombre:
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="text-labelColor font-medium text-fontHeebo text-lg"
+                for="email"
+              >
+                Email:</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="text-labelColor font-medium text-fontHeebo text-lg"
+                for="message"
+              >
+                Mensaje:</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Escribe tú mensaje aquí"
+              ></textarea>
+            </div>
+            <button
+              class="bg-white hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
             >
-              Email:</label
-            >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="mb-4">
-            <label
-              class="text-labelColor font-medium text-fontHeebo text-lg"
-              for="message"
-            >
-              Mensaje:</label
-            >
-            <textarea
-              id="message"
-              rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Escribe tú mensaje aquí"
-            ></textarea>
-          </div>
-          <button
-            class="bg-white hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-          >
-            Enviar
-          </button>
-        </form>
+              Enviar
+            </button>
+          </form>
+        </div>
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
   </body>
   <footer
     class="bg-bgColorBfixed bottom-0 left-0 z-20 w-full p-4 shadow md:flex md:items-center md:justify-between md:p-6"
   >
     <span class="text-sm text-gray-300 sm:text-center"
       >© 2023. Carlos Salcedo.
+    </span>
+    <span class="flex gap-2">
+      <a href="https://www.linkedin.com/in/carlossalcedo1998/" target="_blank">
+        <img src="src/img/linkmini.png" />
+      </a>
+      <a href="https://github.com/Markinsky" target="_blank">
+        <img src="src/img/gitmini.png" />
+      </a>
     </span>
   </footer>
 </html>
