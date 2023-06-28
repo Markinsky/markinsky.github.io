@@ -15,7 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=IBM+Plex+Sans:wght@400;500&family=Schibsted+Grotesk&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EfcXmwQY9uNAE0mc-");
+      })();
+    </script>
     <!--NavBar-->
     <nav class="bg-transparent w-full z-20 top-0 left-0 border-b border-white">
       <div
@@ -220,7 +228,10 @@
           </p>
         </div>
         <div class="w-auto">
-          <form action="post" class="px-8 p-3 border-2 border-gray-400">
+          <form
+            class="px-8 p-3 border-2 border-gray-400"
+            onsubmit="sendEmail(event)"
+          >
             <h2
               class="text-labelColor text-2xl text-center text-fontHeebo font-medium"
             >
@@ -229,44 +240,42 @@
             <div class="mb-4">
               <label
                 class="text-labelColor font-medium text-fontHeebo text-lg"
-                for="name"
+                for="inputName"
               >
                 Nombre:
               </label>
               <input
                 type="text"
-                name="name"
-                id="name"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="Nombre"
+                id="inputName"
                 required
               />
             </div>
             <div class="mb-4">
               <label
                 class="text-labelColor font-medium text-fontHeebo text-lg"
-                for="email"
+                for="inputEmail"
               >
                 Email:</label
               >
               <input
                 type="email"
-                name="email"
-                id="email"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="Email"
+                id="inputEmail"
                 required
               />
             </div>
             <div class="mb-4">
               <label
                 class="text-labelColor font-medium text-fontHeebo text-lg"
-                for="message"
+                for="inputBody"
               >
                 Mensaje:</label
               >
               <textarea
-                id="message"
+                id="inputBody"
                 rows="4"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Escribe tú mensaje aquí"
@@ -274,6 +283,7 @@
             </div>
             <button
               class="bg-white hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+              type="submit"
             >
               Enviar
             </button>
@@ -282,6 +292,8 @@
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="src/js/main.js"></script>
   </body>
   <footer
     class="bg-bgColorBfixed bottom-0 left-0 z-20 w-full p-4 shadow md:flex md:items-center md:justify-between md:p-6"
