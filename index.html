@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=IBM+Plex+Sans:wght@400;500&family=Oswald:wght@500&family=Schibsted+Grotesk&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=IBM+Plex+Sans:wght@400;500&family=Schibsted+Grotesk&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"
       rel="stylesheet"
     />
+    <!--Otros-->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -62,7 +63,7 @@
           >
             <li>
               <a
-                href="#"
+                href="#skills"
                 class="block pl-3 pr-4 font-fontIBM text-labelColor hover:text-labelColorHover px-3 py-2 rounded-md text-xl font-medium"
                 aria-current="page"
                 >Habilidades</a
@@ -70,7 +71,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#touch"
                 class="block pl-3 pr-4 font-fontIBM text-labelColor hover:text-labelColorHover px-3 py-2 rounded-md text-xl font-medium"
                 aria-current="page"
                 >Contactame</a
@@ -78,10 +79,10 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#studies"
                 class="block pl-3 pr-4 font-fontIBM text-labelColor hover:text-labelColorHover px-3 py-2 rounded-md text-xl font-medium"
                 aria-current="page"
-                >Sobre mi</a
+                >Estudios</a
               >
             </li>
           </ul>
@@ -90,47 +91,49 @@
     </nav>
   </head>
   <body class="bg-bgColor">
-    <section class="mt-2">
-      <div class="grid grid-rows-1 place-items-center grid-flow-row gap-2">
-        <label class="text-labelColor font-medium text-fontHeebo text-2xl">
-          ¡Hola! me llamo:
-        </label>
-        <h1 class="text-labelColor font-medium text-fontHeebo text-xl">
-          Carlos Gerardo Salcedo García
-        </h1>
-        <label class="text-labelColor font-medium text-fontHeebo text-xl">
-          ¿Quien soy?</label
-        >
-        <p class="text-labelColor font-medium text-fontHeebo text-xl">
-          Soy un desarollador Java Fullstack, pero me especializo en el
-          <strong> Backend.</strong>
-        </p>
-        <p class="text-labelColor font-medium text-fontHeebo text-xl">
-          Siempre positivo buscando seguir desarollandome personal y
-          laboralmente.
-        </p>
-        <p class="text-labelColor font-medium text-fontHeebo text-xl">
-          Dedicado, jovén y persistente.
-        </p>
-        <img />
-      </div>
-      <div class="flex flex-nowrap gap-4 items-center mt-4 justify-center">
-        <a
-          href="https://www.linkedin.com/in/carlossalcedo1998/"
-          target="_blank"
-        >
-          <img src="src/img/linkedin.png" class="" />
-          <p class="text-labelColor text-lg text-fontHeebo">Linkedin</p></a
-        >
-        <a href="https://github.com/Markinsky" target="_blank"
-          ><img src="src/img/github.png" class="" />
-          <p class="text-labelColor text-lg text-fontHeebo">Github</p>
-        </a>
+    <section id="about-me" class="mt-2 h-screen">
+      <div class="flex h-screen">
+        <div class="m-auto">
+          <label class="text-labelColor font-medium font-fontHeebo text-md">
+            ¡Hola! me llamo:
+          </label>
+          <h1 class="text-labelAqua font-medium font-fontOswald text-3xl">
+            Carlos Gerardo Salcedo García
+          </h1>
+          <label class="text-labelOrange font-medium font-fontHeebo text-xl">
+            ¿Quien soy?</label
+          >
+          <p class="text-labelColor font-medium font-fontHeebo text-xl">
+            Soy un desarollador Java Fullstack, pero me especializo en el
+            <strong> Backend.</strong>
+          </p>
+          <p class="text-labelColor font-medium font-fontHeebo text-xl">
+            Siempre positivo buscando seguir desarollandome personal y
+            laboralmente.
+          </p>
+          <p class="text-labelColor font-medium font-fontHeebo text-xl">
+            Dedicado, jovén y persistente.
+          </p>
+          <img />
+          <div class="flex flex-nowrap gap-4 justify-center mt-3">
+            <a
+              href="https://www.linkedin.com/in/carlossalcedo1998/"
+              target="_blank"
+            >
+              <img src="src/img/linkedin.png" class="" />
+              <p class="text-labelColor text-lg font-fontHeebo">Linkedin</p></a
+            >
+            <a href="https://github.com/Markinsky" target="_blank"
+              ><img src="src/img/github.png" class="" />
+              <p class="text-labelColor text-lg font-fontHeebo">Github</p>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="skills" class="bg-bgColorB mt-4 mb-4">
       <h2
-        class="text-labelColor text-fontIBM font-medium text-2xl text-center mx-auto"
+        class="text-labelOrange font-fontIBM font-medium text-2xl text-center mx-auto"
       >
         Skills
       </h2>
@@ -145,9 +148,9 @@
         <img src="src/img/js.png" />
       </div>
     </section>
-    <section class="pt-3 pb-6">
+    <section id="studies" class="pt-3 pb-9">
       <h1
-        class="text-labelColor text-center mx-auto text-2xl text-fontIBM font-medium"
+        class="text-labelOrange text-center mx-auto text-2xl text-fontIBM font-medium"
       >
         ¿Donde estudie?
       </h1>
@@ -159,14 +162,14 @@
         >
           <img class="w-full" src="/src/img/tec.jpg" />
           <div class="px-6 py-4 bg-transparent">
-            <div class="text-cardsLabel font-bold text-xl mb-2 text-fontIBM">
+            <div class="text-labelAqua font-bold text-xl mb-2 font-fontIBM">
               Tecnologico Mario Molina
             </div>
             <ul>
-              <li class="text-cardsLabel text-fontIBM font-medium">
+              <li class="text-cardsLabel font-fontIBM font-medium">
                 Carrera terminada y titulado.
               </li>
-              <li class="text-cardsLabel text-fontIBM font-medium">
+              <li class="text-cardsLabel font-fontIBM font-medium">
                 Especialidad en bases de datos.
               </li>
             </ul>
@@ -184,11 +187,11 @@
         >
           <img class="w-full" src="/src/img/generation.jpg" />
           <div class="px-6 py-4 bg-transparent">
-            <div class="text-cardsLabel font-bold text-xl mb-2 text-fontIBM">
+            <div class="text-labelAqua font-bold text-xl mb-2 font-fontIBM">
               Generation México
             </div>
             <ul>
-              <li class="text-cardsLabel text-fontIBM font-medium">
+              <li class="text-cardsLabel font-fontIBM font-medium">
                 Participación en el programa de entrenamiento intensivo para
                 jóvenes, diseñado para preparar a los participantes para un
                 puesto en el sector de TI, mediante la enseñanza sobre
@@ -208,22 +211,19 @@
         </div>
       </div>
     </section>
-    <section class="bg-bgColorB pt-4 pb-4">
+    <section id="touch" class="bg-bgColorB pt-4 pb-9">
       <div
         class="flex flex-col gap-6 items-center justify-center pt-4 sm:flex-row"
       >
         <div class="w-96">
-          <h1 class="text-labelColor font-medium text-fontHeebo text-lg">
-            Contactame
-          </h1>
-          <p class="text-labelColor font-medium text-fontHeebo text-lg">
+          <p class="text-labelColor font-medium font-fontHeebo text-lg">
             ¡Gracias por tu interés en contactarme! Por favor, déjame tus
             detalles y te responderé lo antes posible.
           </p>
-          <p class="text-labelColor font-medium text-fontHeebo text-lg">
+          <p class="text-labelColor font-medium font-fontHeebo text-lg">
             También puedes mandarme mensaje por medio de LinkedIn.
           </p>
-          <p class="text-labelColor font-medium text-fontHeebo text-lg">
+          <p class="text-labelColor font-medium font-fontHeebo text-lg">
             Espero tener noticias tuyas pronto. ¡Gracias!
           </p>
         </div>
@@ -233,20 +233,20 @@
             onsubmit="sendEmail(event)"
           >
             <h2
-              class="text-labelColor text-2xl text-center text-fontHeebo font-medium"
+              class="text-labelOrange text-2xl text-center font-fontHeebo font-medium"
             >
               Contactame
             </h2>
             <div class="mb-4">
               <label
-                class="text-labelColor font-medium text-fontHeebo text-lg"
+                class="text-labelColor font-medium font-fontHeebo text-lg"
                 for="inputName"
               >
                 Nombre:
               </label>
               <input
                 type="text"
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                class="rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="Nombre"
                 id="inputName"
                 required
@@ -254,7 +254,7 @@
             </div>
             <div class="mb-4">
               <label
-                class="text-labelColor font-medium text-fontHeebo text-lg"
+                class="text-labelColor font-medium font-fontHeebo text-lg"
                 for="inputEmail"
               >
                 Email:</label
@@ -269,7 +269,7 @@
             </div>
             <div class="mb-4">
               <label
-                class="text-labelColor font-medium text-fontHeebo text-lg"
+                class="text-labelColor font-medium font-fontHeebo text-lg"
                 for="inputBody"
               >
                 Mensaje:</label
